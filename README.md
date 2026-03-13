@@ -357,7 +357,9 @@ The system runs inside a container using a single Dockerfile.
 
 Container execution:
 
+```bash
 python -m core.main
+```
 
 Docker handles:
 
@@ -427,11 +429,15 @@ Dependencies are managed using **uv**.
 
 Install environment:
 
+```bash
 uv sync
+```
 
 Run application:
 
+```bash
 uv run python core/main.py
+```
 
 ---
 
@@ -441,11 +447,15 @@ uv run python core/main.py
 
 Install dependencies
 
+```bash
 uv sync
+```
 
 Run application
 
+```bash
 uv run python core/main.py
+```
 
 Open the interface at:
 
@@ -457,11 +467,15 @@ http://localhost:7860
 
 Build container
 
-docker build -t price-is-right .
+```bash
+docker build -t price-is-right
+```
 
 Run container
 
+```bash
 docker run -p 7860:7860 price-is-right
+```
 
 Access interface:
 
